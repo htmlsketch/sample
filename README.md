@@ -1,6 +1,6 @@
 # HTMLスケッチ サンプルコード
 
-![HTMLスケッチ](https://raw2.github.com/htmlsketch/sample/master/assets/video.gif)
+![HTMLスケッチ](http://f.cl.ly/items/2x0g0g3O1n2A180Y3I1s/video.gif)
 
 ビデオシリーズ「[笠井枝理依のHTMLスケッチ](http://www.youtube.com/user/ellekasai/videos)」のサンプルコードです。
 
