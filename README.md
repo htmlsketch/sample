@@ -9,13 +9,13 @@
 1. [Wikipedia・「初音ミク」ページ](http://ja.wikipedia.org/wiki/%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF)をスケッチ
     1. Part 1
         * [ビデオ](http://www.youtube.com/watch?v=038wQNc_j1s)
-        * [コード](tree/master/1-wikipedia/part1)
+        * [コード](1-wikipedia/part1)
     2. Part 2
         * [ビデオ](http://www.youtube.com/watch?v=cMTDwuL1Mlk)
-        * [コード](tree/master/1-wikipedia/part2)
+        * [コード](1-wikipedia/part2)
     3. Part 3
         * [ビデオ](http://www.youtube.com/watch?v=fMiQomHNAd0)
-        * [コード](tree/master/1-wikipedia/part3)
+        * [コード](1-wikipedia/part3)
 
 ### 更新履歴
 
