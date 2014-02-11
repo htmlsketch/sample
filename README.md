@@ -16,6 +16,9 @@
     3. Part 3
         * [ビデオ](http://www.youtube.com/watch?v=fMiQomHNAd0)
         * [コード](1-wikipedia/part3)
+    4. Part 4
+        * [ビデオ](http://www.youtube.com/watch?v=LI6LxPrs3V8)
+        * [コード](1-wikipedia/part4)
 
 ### 更新履歴
 

@@ -1,0 +1,90 @@
+body {
+  padding: 25px;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #0645ad;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.page-title {
+  border-bottom: 1px solid #aaaaaa;
+  font-size: 27px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.bread-crumb {
+  padding: 5px 10px;
+  border: solid #a0a0ab;
+  border-width: 0 1px 1px 0;
+  background-color: #eeeeff;
+  font-size: 14px;
+}
+
+.bread-crumb li {
+  display: inline-block;
+  list-style: none;
+}
+
+.bread-crumb li::after {
+  content: ">";
+  margin-left: 5px;
+}
+
+.bread-crumb li:last-child {
+  font-weight: bold;
+}
+
+.bread-crumb li:last-child::after {
+  content: "";
+}
+
+.annotation {
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.annotation small {
+  font-size: 13px; 
+}
+
+.table-of-contents {
+  width: 438px;
+  border: 1px solid #aaaaaa;
+  background-color: #f9f9f9;
+  font-size: 14px;
+}
+
+.table-of-contents ol {
+  list-style: none;
+  padding-left: 30px;
+}
+
+.table-of-contents > ol {
+  padding-left: 5px;
+}
+
+.table-of-contents-title {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.table-of-contents-title-txt {
+  font-weight: bold;
+}
+
+.jsc-contents-show-trigger {
+  font-size: 13px;
+}
+
+h2 {
+  margin-bottom: 0;
+  font-weight: normal;
+  border-bottom: 1px solid #aaaaaa;
+}
