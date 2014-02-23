@@ -19,6 +19,9 @@
     4. Part 4
         * [ビデオ](http://www.youtube.com/watch?v=LI6LxPrs3V8)
         * [コード](1-wikipedia/part4)
+    5. Part 5
+        * [ビデオ](http://www.youtube.com/watch?v=Pi_K5wrxb0I)
+        * [コード](1-wikipedia/part5)
 
 ### 更新履歴
 
@@ -28,10 +31,7 @@ HTMLスケッチの[公式ツイッターアカウント](http://twitter.com/htm
 
 **笠井枝理依**
 
-* [Twitter](http://twitter/ellekasai)
-* [Facebook](https://www.facebook.com/elle.kasai)
-* [ブログ](http://ellekasai.com)
-* [Eメール](mailto:elle.kasai@gmail.com)
+* [プロフィール](http://about.ellekasai.com/)
 
 ### ライセンス
 
