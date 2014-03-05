@@ -4,18 +4,19 @@ Clearfix
 ---------------------------------*/
 .cf:before,
 .cf:after {
-    content:"";
-    display:block;
-    overflow:hidden;
+    content: "";
+    display: table;
 }
 .cf:after {
-    clear:both;
+    clear: both;
+}
+.cf {
+    *zoom: 1;
 }
 /*---------------------------------
 Base
 ---------------------------------*/
 body {
-  display: table;
   background-color: #f9f9f9;
   font-size: 15px;
 }
@@ -60,7 +61,6 @@ a:hover {
   text-decoration: underline;
 }
 th, td {
-  display: block;
   text-align: left;
   font-size: 13px;
 }
@@ -78,35 +78,27 @@ footer {
 footer p {
   margin: 10px 0;
 }
-footer nav ul {
-  padding-left: 0;
-  list-style: none;
-}
-footer nav ul li {
-  display: inline-block;
-}
 footer img {
   float: right;
 }
 footer img + img {
   margin-right: 5px;
 }
+.area-wrapper {
+  overflow: hidden;
+}
 /*---------------------------------
 Side Navigation
 ---------------------------------*/
 .area-side {
-  display: table-cell;
+  float: left;
   width: 135px;
   padding: 0 10px 20px 26px;
   font-size: 12px;
 }
 .service-logo {
   display: block;
-  width: 135px;
-  height: 155px;
   margin-left: -6px;
-  background: url(../images/logo.png) no-repeat 0 0;
-  text-indent: -9999px;
 }
 .side-navs {
   margin-top: 25px;
@@ -168,7 +160,7 @@ Side Navigation
 Main Area
 ---------------------------------*/
 .area-main {
-  display: table-cell;
+  margin-left: -171px;
 }
 .header-login {
   margin-left: 5px;
@@ -250,10 +242,6 @@ Main Area
 .keyword-outline-inner-table th {
   border: solid #aaa;
 }
-.keyword-outline-inner-table th,
-.keyword-outline-inner-table td {
-  display: table-cell;
-}
 .keyword-outline-inner-table {
   border-width: 1px;
 }
@@ -286,33 +274,34 @@ Main Area
 .table-of-contents nav > ol {
   padding-left: 0;
 }
-.sumnail-left,
-.sumnail-right {
-  padding: 3px; 
+.thumbnail-left,
+.thumbnail-right {
+  padding: 3px;
+  border: 1px solid #aaa;
+  background-color: #f9f9f9; 
 }
-.sumnail-left {
+.thumbnail-left {
   float: left;
   margin: 0 20px 20px 0;
   clear: left;
 }
-.sumnail-right {
+.thumbnail-right {
   float: right;
-  margin: 20px 0 0 10px;
+  margin: 0 0 20px 10px;
   clear: right;
 }
-.sumnail-img {
+.thumbnail-img-link {
   display: block;
 }
-.sumnail-img > img {
+.thumbnail-img-link > img {
   border: 1px solid #aaa;
 }
-.sumnail-icon {
+.thumbnail-icon {
   float: right;
 }
 .wikipmedia-commons {
   float: right;
   width: 265px;
-  margin: 0;
   padding: 5px 20px 5px 50px;
   border: 1px solid #aaa;
   background: url(http://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png) no-repeat 10px 15px;
@@ -334,4 +323,11 @@ Main Area
   margin-left: 5px;
   padding-left: 5px;
   border-left: 1px solid #aaa;
+}
+.footer-nav ul {
+  padding-left: 0;
+  list-style: none;
+}
+.footer-nav li {
+  display: inline-block;
 }
