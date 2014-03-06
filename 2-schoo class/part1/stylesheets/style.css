@@ -90,7 +90,10 @@ footer img + img {
 /*---------------------------------
 Side Navigation
 ---------------------------------*/
-.area-side {
+.media {
+  overflow: hidden;
+}
+.media-side {
   float: left;
   width: 135px;
   padding: 0 10px 20px 26px;
@@ -159,8 +162,8 @@ Side Navigation
 /*---------------------------------
 Main Area
 ---------------------------------*/
-.area-main {
-  margin-left: -171px;
+.media-body {
+  overflow: hidden;
 }
 .header-login {
   margin-left: 5px;
