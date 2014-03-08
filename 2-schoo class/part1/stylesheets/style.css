@@ -18,7 +18,6 @@ Base
 ---------------------------------*/
 body {
   background-color: #f9f9f9;
-  background-size: 100% 80px;
   font-size: 15px;
 }
 header {
@@ -90,18 +89,7 @@ footer img + img {
 Layout
 ---------------------------------*/
 .media {
-  position: relative;
   overflow: hidden;
-  background-size: 100% 80px;
-}
-.media-cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 80px;
-  background-image: linear-gradient(#fff 50%,#f6f6f6 100%);
 }
 .media-side {
   float: left;
@@ -201,10 +189,9 @@ Main Area
   border: solid #a7d7f9;
   border-width: 0 0 1px 1px;
   background-color: #eaf3f8;
-  background: url(../images/bg-tab-blue.png) repeat-x 0 0;
 }
 .page-tabs li.active {
-  background: url(../images/bg-tab-white.png) repeat-x 0 0;
+  background-color: #fff;
   border-bottom-color: transparent;
 }
 .page-tabs li:last-child {
