@@ -17,6 +17,24 @@ Clearfix
 Base
 ---------------------------------*/
 
+a {
+  color: #4183c4;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+header {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+footer {
+  padding: 24px 0;
+  border-top: 1px solid #eee;
+}
+small {
+  color: #7f777f; 
+}
 
 /*---------------------------------
 Layout
@@ -24,9 +42,112 @@ Layout
 
 
 /*---------------------------------
-
+Header
 ---------------------------------*/
+
+.header-inner {
+  width: 980px;
+  margin: 0 auto;
+}
+.header-logo {
+  float: left;
+}
+.header-logo img {
+  width: 100px;
+  vertical-align: bottom;
+}
+.header-inner li {
+  display: inline-block;
+}
+.header-inner form {
+  position: relative;
+  float: left;
+  margin: 4px 0 0 15px;
+}
+.header-nav {
+  float: right;
+  font-size: 13px;
+}
+.header-nav li {
+  margin-left: 10px;
+  font-weight: bold;
+}
+.header-nav a {
+  color: #333;
+}
+.header-account-btns {
+  float: right;
+  margin-left: 45px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.header-account-btns li + li {
+  margin-left: 10px;
+}
+.header-account-btns a {
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.header-account-btn-signup {
+  border: 1px solid #5ca941;
+  background: -moz-linear-gradient(top, #78d757, #569e3d); 
+  background: -webkit-gradient(linear, left top, left bottom, from(#78d757), to(#569e3d));
+  color: #fff;
+}
+.header-account-btn-signin {
+  border: 1px solid #d5d5d5;
+  background: -moz-linear-gradient(top, #fcfcfc, #eaeaea); 
+  background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#eaeaea));
+  color: #333;
+}
+.header-inner form input {
+  width: 210px;
+  height: 25px;
+  padding-left: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fcfcfc; 
+  font-size: 12px;
+  vertical-align: bottom;
+}
+.header-inner .fa-question-circle {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+}
 
 /*---------------------------------
-
+Footer
 ---------------------------------*/
+
+.footer-inner {
+  position: relative;
+  width: 980px;
+  margin: 0 auto;
+}
+.footer-inner p {
+  float: left;
+}
+.footer-inner i {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  margin-left: -14px;
+  color: #ccc;
+  font-size: 28px;
+}
+.footer-nav-left {
+  float: left;
+}
+.footer-nav-left ul {
+  padding-left: 0;
+}
+.footer-nav-right {
+  float: right;
+}
+.footer-nav-left li,
+.footer-nav-right li {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 12px;
+}
