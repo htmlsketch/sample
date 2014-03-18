@@ -28,18 +28,18 @@ header {
   padding: 15px 0;
   border-bottom: 1px solid #eee;
 }
-footer {
-  padding: 24px 0;
-  border-top: 1px solid #eee;
+h1 {
+  margin: 10px 0;
+  font-size: 26px;
+  color: #333;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 small {
   color: #7f777f; 
 }
-
-/*---------------------------------
-Layout
----------------------------------*/
-
 
 /*---------------------------------
 Header
@@ -117,6 +117,81 @@ Header
 }
 
 /*---------------------------------
+Main
+---------------------------------*/
+
+.main-area {
+  width: 980px;
+  margin: 0 auto; 
+}
+.area-left,
+.area-right {
+  float: left;
+}
+.area-left {
+  width: 225px;
+  padding: 15px;
+}
+.area-left > img {
+  width: 225px;
+  border-radius: 5px;
+}
+.area-left h1 span {
+  display: block;
+}
+.user-name {
+  font-size: 20px;
+  font-weight: 300;
+  color: #666;
+}
+.user-info {
+  padding: 15px 0;
+  font-size: 14px;
+}
+.user-info li + li {
+  margin-top: 5px; 
+}
+.user-info i {
+  color: #ccc;
+}
+.area-left ul {
+  margin: 0;
+  border-top: 1px solid #eee;
+}
+.profile-stats {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+.profile-stats li {
+  display: inline-block;
+  text-align: center;
+}
+.profile-stats li + li {
+  margin-left: 20px;
+}
+.profile-stats li span {
+  display: block;
+}
+.profile-stats li span:first-child {
+  font-size: 28px;
+  font-weight: bold;
+}
+.profile-stats li span:last-child {
+  font-size: 12px;
+  color: #999;
+}
+.area-right {
+  width: 720px;
+}
+.activity-tabs li {
+  display: inline-block;
+}
+.area-right table {
+  display: inline-block;
+}
+
+
+/*---------------------------------
 Footer
 ---------------------------------*/
 
@@ -124,6 +199,8 @@ Footer
   position: relative;
   width: 980px;
   margin: 0 auto;
+  padding: 24px 0;
+  border-top: 1px solid #eee;
 }
 .footer-inner p {
   float: left;
