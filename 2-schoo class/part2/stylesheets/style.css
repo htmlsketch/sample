@@ -440,8 +440,9 @@ Main
 }
 .main-box-log-detail li {
   float: left;
-  width: 242px;
+  width: 33.333%;
   height: 100%;
+  box-sizing: border-box;
 }
 .main-box-log-detail li + li {
   border-left: 1px solid #d5d5d5;
