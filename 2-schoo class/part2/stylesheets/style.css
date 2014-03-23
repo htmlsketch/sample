@@ -38,12 +38,26 @@ h1 span {
   display: block;
 }
 h2 {
-  font-size: 21px;
   margin-top: 19px;
+  font-size: 21px;
 }
 ul {
   padding-left: 0;
   list-style: none;
+}
+form {
+  position: relative;
+  float: left;
+  margin: 3px 0 0 13px;
+}
+form input {
+  width: 210px;
+  height: 24px;
+  padding-left: 8px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: #fcfcfc;
+  vertical-align: bottom;
 }
 a {
   color: #4183c4;
@@ -57,16 +71,16 @@ Layout
 ---------------------------------*/
 .container {
   width: 980px;
-  margin: 0 auto;
+  margin: 0 auto; 
 }
-.container-left,
-.container-right {
+.main-left,
+.main-right {
   float: left;
 }
-.container-left {
+.main-left {
   padding: 20px 20px 0 0;
 }
-.container-right {
+.main-right {
   width: 730px;
   padding-top: 20px;
 }
@@ -78,7 +92,7 @@ Modules
   border-radius: 3px;
   font-weight: bold; 
 }
-.btn-base {
+.btn-common {
   border: 1px solid #d5d5d5;
   background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#eaeaea));
   color: #333;
@@ -107,20 +121,6 @@ Header
   width: 103px;
   vertical-align: bottom;
 }
-.header-inner form {
-  position: relative;
-  float: left;
-  margin: 3px 0 0 13px;
-}
-.header-inner form input {
-  width: 210px;
-  height: 24px;
-  padding-left: 8px;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  background-color: #fcfcfc;
-  vertical-align: bottom;
-}
 .header-icon-question {
   position: absolute;
   top: 6px;
@@ -129,7 +129,7 @@ Header
   font-size: 14px;
 }
 .header-nav li,
-.header-account-btns li {
+.header-btns-account li {
   display: inline-block;
 }
 .header-nav {
@@ -146,19 +146,19 @@ Header
 .header-nav a {
   color: #333;
 }
-.header-account-btns {
+.header-btns-account {
   float: right;
   margin: 9px 0 0 95px;
   font-size: 13px;
 }
-.header-account-btns li + li {
+.header-btns-account li + li {
   margin-left: 5px;
 }
 /*---------------------------------
 Main
 ---------------------------------*/
 /* area-left */
-.container-left > img {
+.main-left > img {
   width: 230px;
   border-radius: 6px;
 }
@@ -542,11 +542,11 @@ Footer
 .footer-nav-left ul {
   padding-left: 3px;
 }
-.footer-nav-right {
-  float: right;
-}
 .footer-nav-left li,
 .footer-nav-right li {
   display: inline-block;
   margin-left: 10px;
+}
+.footer-nav-right {
+  float: right;
 }
