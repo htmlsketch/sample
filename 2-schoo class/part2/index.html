@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <contribution-contents-box-title></contribution-contents-box-title>
+  <title>ellekasai (Elle Kasai) · GitHub</title>
   <link rel="stylesheet" href="stylesheets/normalize.css">
   <link rel="stylesheet" href="stylesheets/style.css">
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
@@ -52,18 +52,18 @@
         <ul class="contribution-tabs cf">
           <li><a href="" class="active"><i class="fa fa-plus-square-o fa-fw"></i> Contributions</a></li>
           <li><a href=""><i class="fa fa-book fa-fw"></i> Repositories</a></li>
-          <li><a href=""><i class="fa fa-rss fa-fw"></i> Public contribution</a></li>
+          <li><a href=""><i class="fa fa-rss fa-fw"></i> Public Activity</a></li>
         </ul>
         <a href="" class="btn btn-base btn-follow"><i class="fa fa-user"></i>Follow</a>
       </div>
       <div class="contribution-contents cf">
         <div class="contribution-contents-box">
-          <h3>Popular repositories</h3>
+          <h3 class="box-head">Popular repositories</h3>
           <ul>
             <li>
               <a href="">
                 <div class="contribution-contents-box-title">
-                  <span><i class="fa fa-book"></i>
+                  <span class="repo-title"><i class="fa fa-book"></i>
                   shinayaka </span><span class="contribution-contents-box-description">Jekyll blog theme</span>
                 </div>
                 <div class="contribution-contents-box-num-starred">
@@ -74,7 +74,7 @@
             <li>
               <a href="">
                 <div class="contribution-contents-box-title">
-                  <span><i class="fa fa-book"></i>
+                  <span class="repo-title"><i class="fa fa-book"></i>
                   promo </span><span class="contribution-contents-box-description">http://promo.ellekasai.com</span>
                 </div>
                 <div class="contribution-contents-box-num-starred">
@@ -85,7 +85,7 @@
             <li>
               <a href="">
                 <div class="contribution-contents-box-title no-description">
-                  <span><i class="fa fa-book"></i> ellekasai.com</span>
+                  <span class="repo-title"><i class="fa fa-book"></i> ellekasai.com</span>
                 </div>
                 <div class="contribution-contents-box-num-starred">
                   2<i class="fa fa-star"></i>
@@ -95,7 +95,7 @@
             <li>
               <a href="">
                 <div class="contribution-contents-box-title">
-                  <span><i class="fa fa-book"></i>
+                  <span class="repo-title"><i class="fa fa-book"></i>
                   bootstrap </span><span class="contribution-contents-box-description">Sleek, intuitive, and powerful front-end f...</span>
                 </div>
                 <div class="contribution-contents-box-num-starred">
@@ -106,7 +106,7 @@
             <li>
               <a href="">
                 <div class="contribution-contents-box-title no-description">
-                  <span><i class="fa fa-book"></i>
+                  <span class="repo-title"><i class="fa fa-book"></i>
                     krizel.ellekasai.com</span>
                 </div>
                 <div class="contribution-contents-box-num-starred">
@@ -117,13 +117,13 @@
           </ul>
         </div><!--
         --><div class="contribution-contents-box">
-          <h3>Repositories contributed to</h3>
+          <h3 class="box-head">Repositories contributed to</h3>
           <ul>
             <li>
               <a href="">
                 <div class="contribution-contents-box-title title-light">
-                  <span><i class="fa fa-book"></i>
-                  htmlsketch/sample </span><span class="contribution-contents-box-description">HTMLスケッチシリーズのサンプルコー...</span>
+                  <span class="repo-title"><i class="fa fa-book"></i>
+                  htmlsketch/<span class="title-bold">sample</span> </span><span class="contribution-contents-box-description">HTMLスケッチシリーズのサンプルコー...</span>
                 </div>
                 <div class="contribution-contents-box-num-starred">
                   4<i class="fa fa-star"></i>
@@ -133,7 +133,7 @@
           </ul>
         </div>
         <div class="contribution-contents-box-full">
-          <h3>Public contributions</h3>
+          <h3 class="box-head">Public contributions</h3>
           <div class="contribution-contents-box-full-contents">
             <div class="contribution-log cf">
               <ul class="month">
@@ -205,11 +205,13 @@
             </div>
           </div>
         </div>
-        <section class="cf btn">
-          <h2>Contribution contribution</h2>
-          <a href="" class="btn btn-base btn-week">Period: <span>1 Week</span><i class="fa fa-caret-down"></i></a>
+        <section class="cf">
+          <h2>Contribution Activity</h2>
+          <a href="" class="btn btn-base btn-week"><span class="btn-txt-gray">Period:</span> <span>1 Week</span><i class="fa fa-caret-down"></i></a>
           <div class="commit-count">
-            <span class="commit-num"><i class="fa fa-arrows-h"></i> <span>3</span> Commits</span>
+            <div class="commit-num-wrapper">
+              <span class="commit-num"><i class="fa fa-arrows-h"></i> <span>3</span> Commits</span>
+            </div>
             <a href="">Pushed 2 commits to htmlsketch/sample</a>
             <span class="commit-count-term">Mar 13 - Mar 15</span>
           </div>

@@ -27,6 +27,9 @@ header {
 footer {
   color: #7f777f; 
 }
+section {
+  position: relative;
+}
 h1 {
   margin: 7px 0 16px;
   font-size: 26px;
@@ -36,15 +39,7 @@ h1 span {
 }
 h2 {
   font-size: 21px;
-}
-h3 {
-  margin: 0;
-  padding: 8px 10px 11px;
-  border: 1px solid #d5d5d5;
-  border-radius: 5px 5px 0 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#eaeaea));
-  color: #555;
-  font-size: 13px;
+  margin-top: 19px;
 }
 ul {
   padding-left: 0;
@@ -238,14 +233,22 @@ Main
   font-size: 17px;
 }
 .contribution-contents {
-  padding: 20px 0 60px 0;
+  padding: 20px 0 65px 0;
   border-top: 1px solid #ddd;
 }
 .contribution-contents-box {
   display: inline-block;
   width: 355px;
   vertical-align: top;
-  font-size: 14px;
+}
+.box-head {
+  margin: 0;
+  padding: 8px 10px 11px;
+  border: 1px solid #d5d5d5;
+  border-radius: 5px 5px 0 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#eaeaea));
+  color: #555;
+  font-size: 13px;
 }
 .contribution-contents-box ul {
   margin: 0;
@@ -277,6 +280,9 @@ Main
   margin-top: -17px;
   font-weight: bold;
 }
+.repo-title {
+  font-size: 14px;
+}
 .contribution-contents-box-title.title-light {
   font-weight: normal;
 }
@@ -287,10 +293,13 @@ Main
   margin-right: 3px;
   color: #666;
 }
+.contribution-contents-box li .title-bold {
+  font-weight: bold;
+  display: inline-block;
+}
 .contribution-contents-box-description {
   margin: 3px 0 0 20px;
   color: #777783;
-  font-size: 12px;
   font-weight: normal;
   text-overflow: ellipsis;
 }
@@ -303,7 +312,6 @@ Main
   right: 10px;
   margin-top: -7px;
   color: #888;
-  font-size: 12px;
 }
 .contribution-contents-box-num-starred i {
   margin-left: 4px;
@@ -318,15 +326,14 @@ Main
   margin-left: 0;
 }
 .month {
-  margin: 0;
+  margin: 0 0 0 13px;
 }
 .month li {
   display: inline-block;
-  margin-left: 30px;
-  font-size: 11px;
   color: #aaa;
 }
 .month li + li {
+  margin-left: 35px;
   border: none;
 }
 .contribution-contents-box-full-contents {
@@ -336,13 +343,12 @@ Main
 }
 .contribution-log {
   padding: 10px;
+  font-size: 10px;
 }
 .term li {
-  font-size: 11px;
-  color: #aaa;
-}
-.term li + li {
-  margin-top: 10px;
+  color: #ccc;
+  font-size: 9px;
+  margin-top: 15px;
 }
 .table {
   padding: 5px;
@@ -372,29 +378,38 @@ Main
   margin-bottom: 0;
 }
 .support {
-  font-size: 11px;
   display: inline-block;
   color: #999;
+  margin: 3px 0 0;
+  font-size: 11px;
+}
+.support i {
+  font-size: 16px;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 .support span {
+  vertical-align: middle;
   margin-left: 5px;
 }
 .hanyo {
+  margin-top: 3px;
   float: right;
+  font-size: 11px;
 }
 .hanyo * {
   display: inline-block;
 }
 .hanyo span {
-  font-size: 11px;
   color: #999;
 }
 .hanyo ul {
   margin: 0;
+  padding: 0 5px;
 }
 .hanyo li {
-  width: 11px;
-  height: 11px;
+  width: 10px;
+  height: 10px;
 }
 .a {
   background-color: #eee;
@@ -426,7 +441,7 @@ Main
   border-left: 1px solid #d5d5d5;
 }
 .contribution-log-num li > div {
-  padding: 10px 20px;
+  padding: 12px 20px;
 }
 .contribution-log-num span {
   display: block;
@@ -437,38 +452,42 @@ Main
   font-weight: bold;
 }
 .num-term {
-  margin-top: 5px;
-  font-size: 14px;
+  margin-top: 3px;
+  font-size: 13px;
   color: #999;
 }
 .num-description {
   border-top: 1px solid #f7f7f7;
-  padding: 10px;
+  padding: 11px;
   font-size: 11px;
   font-weight: bold;
   color: #777783;
 }
 .commit-count {
-  margin-top: 40px;
-  padding-top: 30px;
+  margin-top: 38px;
+  padding-top: 24px;
   border-top: 1px solid #dddddd;
   position: relative;
 }
-.commit-num {
+.commit-num-wrapper {
   position: absolute;
-  top: -20px;
-  left: 50%;
-  margin-left: -50px;
-  padding: 10px;
+  top: -12px;
+  width: 100%;
+  text-align: center;
+}
+.commit-num {
+  padding: 10px 5px;
   background-color: #fff;
   font-size: 16px;
   color: #999;
 }
 .commit-num span {
   font-weight: bold;
+  color: #333;
 }
 .commit-count a {
   font-weight: bold;
+  font-size: 13px
 }
 .btn {
   position: relative;
@@ -477,10 +496,21 @@ Main
   position: absolute;
   top: 20px;
   right: 0;
-  margin-top: 0;
+  padding: 4px 10px 5px;
+  font-size: 13px;
+}
+.btn-week i {
+  margin-left: 8px;
+  font-size: 12px;
+}
+.btn-txt-gray {
+  font-weight: normal;
+  color: #8a8a8a;
 }
 .commit-count-term {
   color: #999;
+  font-size: 13px;
+  margin-left: 1px;
 }
 
 /*---------------------------------
@@ -488,18 +518,21 @@ Footer
 ---------------------------------*/
 .footer-inner {
   position: relative;
-  padding: 24px 0;
+  padding: 30px 0 53px;
   border-top: 1px solid #eee;
 }
 .footer-inner p {
   float: left;
 }
+.footer-inner a {
+  display: block;
+}
 .footer-icon-github {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -12px;
-  margin-left: -14px;
+  margin-top: -25px;
+  margin-left: -12px;
   color: #ccc;
   font-size: 28px;
 }
@@ -507,7 +540,7 @@ Footer
   float: left;
 }
 .footer-nav-left ul {
-  padding-left: 0;
+  padding-left: 3px;
 }
 .footer-nav-right {
   float: right;
