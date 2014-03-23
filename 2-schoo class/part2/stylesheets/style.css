@@ -73,29 +73,32 @@ Layout
   width: 980px;
   margin: 0 auto; 
 }
-.main-left,
-.main-right {
+.container-left,
+.container-right {
   float: left;
 }
-.main-left {
+.container-left {
   padding: 20px 20px 0 0;
 }
-.main-right {
+.container-right {
   width: 730px;
   padding-top: 20px;
+}
+.container-right-body {
+  padding: 20px 0 65px 0;
+  border-top: 1px solid #ddd;
 }
 /*---------------------------------
 Modules
 ---------------------------------*/
 .btn {
+  position: relative;
   padding: 8px 12px 9px;
-  border-radius: 3px;
-  font-weight: bold; 
-}
-.btn-common {
   border: 1px solid #d5d5d5;
+  border-radius: 3px;
   background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#eaeaea));
   color: #333;
+  font-weight: bold; 
 }
 .btn-primary {
   border: 1px solid #5ca941;
@@ -109,6 +112,21 @@ Modules
 }
 .btn-follow i {
   margin-right: 10px;
+}
+.btn-week {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  padding: 4px 10px 5px;
+  font-size: 13px;
+}
+.btn-week i {
+  margin-left: 8px;
+  font-size: 12px;
+}
+.btn-txt-gray {
+  color: #8a8a8a;
+  font-weight: normal;
 }
 /*---------------------------------
 Header
@@ -157,91 +175,94 @@ Header
 /*---------------------------------
 Main
 ---------------------------------*/
-/* area-left */
-.main-left > img {
+/*-- container-left --*/
+.main-user-img {
   width: 230px;
   border-radius: 6px;
 }
-.user-name {
+.main-user-name {
   color: #666;
   font-size: 20px;
   font-weight: 300;
 }
-.user-info,
-.profile-stats {
+.main-user-info,
+.main-user-profile {
   margin: 0;
   border-top: 1px solid #eee;
 }
-.user-info {
+.main-user-info {
   padding: 18px 0 19px;
   font-size: 14px;
 }
-.user-info li + li {
+.main-user-info li + li {
   margin-top: 7px; 
 }
-.user-info i {
+.main-user-info i {
   margin-right: 2px;
   color: #ccc;
 }
-.profile-stats {
+.main-user-profile {
   padding: 13px 0 16px;
   border-bottom: 1px solid #eee;
 }
-.profile-stats li {
+.main-user-profile li {
   float: left;
   width: 33.333%;
   text-align: center;
 }
-.profile-stats li span {
+.main-user-profile li span {
   display: block;
 }
-.profile-stats-num {
+.main-user-profile-num {
   font-size: 28px;
   font-weight: bold;
 }
-.profile-stats-unit {
+.main-user-profile-unit {
   margin-top: -1px;
   color: #999;
   font-size: 11px;
 }
 
-/* area-right */
-.contribution-tabs {
+/*-- container-right --*/
+.main-tabs {
   float: left;
   margin: 0 0 -1px 0;
 }
-.contribution-tabs li {
+.main-tabs li {
   float: left;
 }
-.contribution-tabs li + li {
+.main-tabs li + li {
   margin-left: 2px;
 }
-.contribution-tabs a {
+.main-tabs a {
   display: block;
   padding: 10px 11px 7px 9px;
   color: #666;
   font-size: 14px;
   text-decoration: none;
 }
-.contribution-tabs a.active {
+.main-tabs a.active {
   border: 1px solid;
   border-color: #ddd #ddd #fff #ddd;  
   border-radius: 3px 3px 0 0;
 }
-.contribution-tabs i {
+.main-tabs i {
   margin-right: -3px;
   font-size: 17px;
 }
-.contribution-contents {
-  padding: 20px 0 65px 0;
-  border-top: 1px solid #ddd;
-}
-.contribution-contents-box {
+.main-box {
   display: inline-block;
   width: 355px;
   vertical-align: top;
 }
-.box-head {
+.main-box + .main-box {
+  margin-left: 20px;
+}
+.main-box.full-width {
+  width: 100%;
+  margin: 20px 0 0 0;
+}
+.main-box-head {
   margin: 0;
   padding: 8px 10px 11px;
   border: 1px solid #d5d5d5;
@@ -250,269 +271,238 @@ Main
   color: #555;
   font-size: 13px;
 }
-.contribution-contents-box ul {
+.main-box-body,
+.main-box-body-full-width {
   margin: 0;
   border: solid #d5d5d5;
   border-width: 0px 1px 1px 1px;
   border-radius: 0 0 5px 5px;
 }
-.contribution-contents-box li {
+.main-box-body li {
   height: 47px;
 }
-.contribution-contents-box li + li {
+.main-box-body li + li {
   border-top: 1px solid #d5d5d5;
 }
-.contribution-contents-box li span {
-  display: block;
-}
-.contribution-contents-box a {
+.main-box-body a {
   display: block;
   height: 100%;
   position: relative;
 }
-.contribution-contents-box a:hover {
+.main-box-body a:hover {
   text-decoration: none;
 }
-.contribution-contents-box-title {
+.main-box-project {
   position: absolute;
   top: 50%;
   left: 10px;
   margin-top: -17px;
   font-weight: bold;
 }
-.repo-title {
-  font-size: 14px;
-}
-.contribution-contents-box-title.title-light {
+.main-box-project.other-user-project {
   font-weight: normal;
 }
-.contribution-contents-box-title.title-light .contribution-contents-box-description {
-  margin-top: 1px;
+.main-box-project span {
+  display: block;
 }
-.contribution-contents-box-title i {
+.main-box-project-title {
+  font-size: 14px;
+}
+.main-box-project i {
   margin-right: 3px;
   color: #666;
 }
-.contribution-contents-box li .title-bold {
+.main-box-project .other-user-project-name {
   font-weight: bold;
   display: inline-block;
 }
-.contribution-contents-box-description {
+.main-box-project-description {
   margin: 3px 0 0 20px;
   color: #777783;
   font-weight: normal;
   text-overflow: ellipsis;
 }
-.contribution-contents-box-title.no-description {
+.main-box-project.no-description {
   margin-top: -9px;
 }
-.contribution-contents-box-num-starred {
+.main-box-project.other-user-project .main-box-project-description {
+  margin-top: 1px;
+}
+.main-box-num-starred {
   position: absolute;
   top: 50%;
   right: 10px;
   margin-top: -7px;
   color: #888;
 }
-.contribution-contents-box-num-starred i {
+.main-box-num-starred i {
   margin-left: 4px;
   font-size: 14px;
 }
-.contribution-contents-box + .contribution-contents-box {
-  margin-left: 20px;
-}
-.contribution-contents-box-full {
-  width: 100%;
-  margin-top: 20px;
-  margin-left: 0;
-}
-.month {
-  margin: 0 0 0 13px;
-}
-.month li {
-  display: inline-block;
-  color: #aaa;
-}
-.month li + li {
-  margin-left: 35px;
-  border: none;
-}
-.contribution-contents-box-full-contents {
-  border: solid #d5d5d5;
-  border-width: 0px 1px 1px 1px;
-  border-radius: 0 0 5px 5px;
-}
-.contribution-log {
+.main-box-log {
   padding: 10px;
   font-size: 10px;
 }
-.term li {
-  color: #ccc;
-  font-size: 9px;
-  margin-top: 15px;
+.main-box-log-month {
+  margin: 0 0 0 13px;
 }
-.table {
-  padding: 5px;
-  float: right;
+.main-box-log-month li {
+  display: inline-block;
+  color: #aaa;
 }
-.box {
-  display: block;
-  width: 11px;
-  height: 11px;
-  background-color: #eee;
-  margin-right: 2px;
+.main-box-log-month li + li {
+  margin-left: 35px;
+  border: none;
+}
+.main-box-log-term {
   float: left;
 }
-.box.c {
-  background-color: #d6e685;
+.main-box-log-term li {
+  margin-top: 15px;
+  color: #ccc;
+  font-size: 9px;
 }
-.box.cc {
-  background-color: #44a340;
+.main-box-log-table {
+  float: right;
+  padding: 5px;
 }
-.box:last-child {
-  margin-right: 0;
-}
-.table-row {
+.main-box-log-table-row {
   margin-bottom: 2px;
 }
-.table-row:last-child {
+.main-box-log-table-row:last-child {
   margin-bottom: 0;
 }
-.support {
+.main-box-log-square {
+  display: block;
+  float: left;
+  width: 11px;
+  height: 11px;
+  margin-right: 2px;
+  background-color: #eee;
+}
+.main-box-log-square:last-child {
+  margin-right: 0;
+}
+.main-box-log-annotation {
   display: inline-block;
-  color: #999;
   margin: 3px 0 0;
+  color: #999;
   font-size: 11px;
 }
-.support i {
-  font-size: 16px;
+.main-box-log-annotation i {
   margin-right: 5px;
+  font-size: 16px;
   vertical-align: middle;
 }
-.support span {
-  vertical-align: middle;
+.main-box-log-annotation span {
   margin-left: 5px;
+  vertical-align: middle;
 }
-.hanyo {
-  margin-top: 3px;
+.main-box-log-sample {
   float: right;
+  margin-top: 3px;
   font-size: 11px;
 }
-.hanyo * {
+.main-box-log-sample * {
   display: inline-block;
 }
-.hanyo span {
+.main-box-log-sample span {
   color: #999;
 }
-.hanyo ul {
+.main-box-log-sample ul {
   margin: 0;
   padding: 0 5px;
 }
-.hanyo li {
+.main-box-log-sample li {
   width: 10px;
   height: 10px;
 }
-.a {
+.log-gray {
   background-color: #eee;
 }
-.aa {
+.log-light-yellow-green {
   background-color: #d6e685;
 }
-.aaa {
+.log-yellow-green {
   background-color: #8cc665;
 }
-.aaaa {
+.log-green {
   background-color: #44a340;
 }
-.aaaaa {
+.log-deep-green {
   background-color: #1e6823;
 }
-.contribution-log-num {
+.main-box-log-detail {
   border-top: 1px solid #d5d5d5;
 }
-.contribution-log-num ul {
+.main-box-log-detail ul {
   margin: 0;
 }
-.contribution-log-num li {
-  height: 100%;
+.main-box-log-detail li {
   float: left;
   width: 242px;
+  height: 100%;
 }
-.contribution-log-num li + li {
+.main-box-log-detail li + li {
   border-left: 1px solid #d5d5d5;
 }
-.contribution-log-num li > div {
+.main-box-log-detail li > div {
   padding: 12px 20px;
 }
-.contribution-log-num span {
+.main-box-log-detail span {
   display: block;
   text-align: center;
 }
-.num-total {
+.main-box-log-detail-total {
   font-size: 16px;
   font-weight: bold;
 }
-.num-term {
+.main-box-log-detail-term {
   margin-top: 3px;
-  font-size: 13px;
   color: #999;
+  font-size: 13px;
 }
-.num-description {
-  border-top: 1px solid #f7f7f7;
+.main-box-log-detail-description {
   padding: 11px;
+  border-top: 1px solid #f7f7f7;
+  color: #777783;
   font-size: 11px;
   font-weight: bold;
-  color: #777783;
 }
-.commit-count {
+.main-contribution-activity {
+  position: relative;
   margin-top: 38px;
   padding-top: 24px;
-  border-top: 1px solid #dddddd;
-  position: relative;
+  border-top: 1px solid #ddd;
 }
-.commit-num-wrapper {
+.main-contribution-activity-num {
   position: absolute;
   top: -12px;
   width: 100%;
   text-align: center;
 }
-.commit-num {
+.main-contribution-activity-num-inner {
   padding: 10px 5px;
   background-color: #fff;
+  color: #999;
   font-size: 16px;
-  color: #999;
 }
-.commit-num span {
-  font-weight: bold;
+.main-contribution-activity-num-inner span {
   color: #333;
-}
-.commit-count a {
   font-weight: bold;
+}
+.main-contribution-activity-detail {
+  margin: 0;
+}
+.main-contribution-activity-detail a {
   font-size: 13px
+  font-weight: bold;
 }
-.btn {
-  position: relative;
-}
-.btn-week {
-  position: absolute;
-  top: 20px;
-  right: 0;
-  padding: 4px 10px 5px;
-  font-size: 13px;
-}
-.btn-week i {
-  margin-left: 8px;
-  font-size: 12px;
-}
-.btn-txt-gray {
-  font-weight: normal;
-  color: #8a8a8a;
-}
-.commit-count-term {
+.main-contribution-activity-detail span {
+  margin-left: 1px;
   color: #999;
   font-size: 13px;
-  margin-left: 1px;
 }
-
 /*---------------------------------
 Footer
 ---------------------------------*/
