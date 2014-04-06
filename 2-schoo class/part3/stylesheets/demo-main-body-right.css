@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*---------------------------------
+Main
+---------------------------------*/
+
+/*-- main-body-right --*/
+.main-body {
+  border-top: 1px solid #eee;
+}
+.main-body-right {
+  float: right;
+}
+.main-body-right-tabs {
+  margin-top: 20px;
+  padding: 10px 0;
+  border-left: 1px solid #eee;
+}
+.main-body-right-tabs li {
+  margin-left: -1px;
+}
+.main-body-right-tabs li + li {
+  margin-top: 10px;
+}
+.main-body-right-tabs a {
+  display: block;
+  padding: 10px 8px;
+}
+.main-body-right-tabs li.active {
+  border-color: #eee #c1600f #eee #fff;
+  border-radius: 0px 3px 3px 0;
+  border-style: solid;
+  border-width: 1px 3px 1px 1px;
+}
+.main-body-right-tabs li.active a {
+  color: #333;
+}
+.main-body-right-tabs a {
+  color: #999;
+  font-size: 15px; 
+}

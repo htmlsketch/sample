@@ -1,4 +1,5 @@
-  @charset "UTF-8";
+@charset "UTF-8";
+
 /*---------------------------------
 Clearfix
 ---------------------------------*/
@@ -13,6 +14,15 @@ Clearfix
 .cf {
     *zoom: 1;
 }
+
+/*---------------------------------
+Layout
+---------------------------------*/
+.container {
+  width: 980px;
+  margin: 0 auto; 
+}
+
 /*---------------------------------
 Base
 ---------------------------------*/
@@ -26,22 +36,6 @@ header {
 }
 footer {
   color: #7f777f; 
-}
-section {
-  position: relative;
-}
-h1 {
-  margin-bottom: 10px;
-  font-size: 30px;
-  font-weight: normal;
-}
-h1 span {
-  color: #aaa; 
-  font-weight: 300;
-}
-h2 {
-  margin-top: 19px;
-  font-size: 21px;
 }
 ul {
   padding-left: 0;
@@ -69,31 +63,11 @@ a {
 a:hover {
   text-decoration: underline;
 }
-/*---------------------------------
-Layout
----------------------------------*/
-.container {
-  width: 980px;
-  margin: 0 auto; 
-}
-.container-left,
-.container-right {
-  float: left;
-}
-.container-left {
-  padding: 20px 20px 0 0;
-}
-.container-right {
-  width: 730px;
-  padding-top: 20px;
-}
-.container-right-body {
-  padding: 20px 0 65px 0;
-  border-top: 1px solid #ddd;
-}
+
 /*---------------------------------
 Modules
 ---------------------------------*/
+/*-- btn --*/
 .btn {
   position: relative;
   padding: 8px 12px 9px;
@@ -108,64 +82,8 @@ Modules
   background: -webkit-gradient(linear, left top, left bottom, from(#89dc6c), to(#61b145));
   color: #fff;
 }
-.btn-follow {
-  float: right;
-  padding: 4px 10px 5px;
-  font-size: 13px;
-}
-.btn-follow i {
-  margin-right: 10px;
-}
-.btn-period {
-  position: absolute;
-  top: 20px;
-  right: 0;
-  padding: 4px 10px 5px;
-  font-size: 13px;
-}
-.btn-period i {
-  margin-left: 8px;
-  font-size: 12px;
-}
-.btn-period span:first-child {
-  color: #8a8a8a;
-  font-weight: normal;
-}
-.btn-count {
-  padding: 5px 0 5px 10px;
-}
-.btn-count span {
-  margin-left: 10px;
-  padding: 6px 5px 5px;
-  border-left: 1px solid #d5d5d5;
-  background-color: #fff;
-  font-size: 11px;
-}
-.btn-new-issue {
-  position: absolute;
-  top: 0;
-  right: 20px;
-  padding: 5px 10px;
-}
-.label-purple {
-  padding: 5px;
-  border-radius: 3px;
-  background-color: #6e5494;
-  color: #fff;
-  font-weight: bold;
-}
-.label-purple i {
-  margin-right: 5px;
-}
-.label-branch {
-  padding: 3px 5px;
-  border-bottom: 1px solid #cbd2d9;
-  border-radius: 3px;
-  background-color: #e8f0f8;
-  color: #336479;
-  font-family: Monaco, "Liberation Mono", Courier, monospace;
-  font-size: 10px;
-}
+
+/*-- label --*/
 
 /*---------------------------------
 Header
@@ -227,174 +145,6 @@ Header
 }
 .header-btns-account li + li {
   margin-left: 5px;
-}
-/*---------------------------------
-Main
----------------------------------*/
-
-/*-- main-head --*/
-.main-head-inner {
-  padding: 20px 0;
-}
-.main-head-inner-left {
-  float: left;
-  color: #666;
-}
-.main-head-inner-left i,
-.main-head-inner-left span {
-  vertical-align: middle;
-}
-.main-head-inner-left i {
-  margin-right: 5px;
-  font-size: 30px;
-}
-.main-head-inner-left span {
-  font-size: 20px;
-}
-.main-head-repository-name {
-  font-weight: bold;
-}
-.main-head-inner-right {
-  float: right;
-  margin-top: 5px;
-}
-.main-head-inner-right a + a {
-  margin-left: 10px; 
-}
-.main-head-inner-right i {
-  margin-right: 5px;
-  font-size: 15px;
-  vertical-align: bottom;
-}
-/*-- main-body --*/
-.main-body {
-  border-top: 1px solid #eee;
-}
-.main-body-right {
-  float: right;
-}
-.main-body-right-tabs {
-  margin-top: 20px;
-  padding: 10px 0;
-  border-left: 1px solid #eee;
-}
-.main-body-right-tabs li {
-  margin-left: -1px;
-}
-.main-body-right-tabs li + li {
-  margin-top: 10px;
-}
-.main-body-right-tabs a {
-  display: block;
-  padding: 10px 8px;
-}
-.main-body-right-tabs li.active {
-  border-color: #eee #c1600f #eee #fff;
-  border-radius: 0px 3px 3px 0;
-  border-style: solid;
-  border-width: 1px 3px 1px 1px;
-}
-.main-body-right-tabs li.active a {
-  color: #333;
-}
-.main-body-right-tabs a {
-  color: #999;
-  font-size: 15px; 
-}
-.main-body-left {
-  float: left;
-  width: 935px;
-}
-.main-body-left-top {
-  position: relative;
-}
-.main-angle-back {
-  position: absolute;
-  top: 0;
-  left: -30px;
-  color: #ccc;
-  font-size: 30px;
-}
-.main-body-left-status {
-  color: #777;
-  font-size: 15px;
-}
-.main-body-left-status .label-purple {
-  margin-right: 10px;
-}
-.main-body-left-status strong {
-  color: #555;
-}
-.main-tabs {
-  float: left;
-  margin: 5px 0 -1px 0;
-}
-.main-tabs li {
-  float: left;
-}
-.main-tabs li + li {
-  margin-left: 10px;
-}
-.main-tabs a {
-  display: block;
-  padding: 10px 15px 7px 9px;
-  color: #666;
-  font-size: 12px;
-  text-decoration: none;
-}
-.main-tabs a.active {
-  border: 1px solid;
-  border-color: #ddd #ddd #fff #ddd;  
-  border-radius: 3px 3px 0 0;
-  color: #333;
-}
-.main-tabs i {
-  margin-right: 3px;
-  font-size: 15px;
-}
-.main-tabs span {
-  margin-left: 5px;
-  padding: 2px 5px;
-  border-radius: 50%;
-  background-color: #e5e5e5;
-  color: #777;
-  font-size: 10px;
-  font-weight: bold;
-}
-.main-change-logs {
-  float: right;
-  margin-right: 20px;
-}
-.main-change-logs ul,
-.main-change-logs span {
-  margin: 10px 0 0 5px;
-  display: inline-block;
-}
-.main-change-logs li {
-  display: block;
-  float: left;
-  margin-left: 1px;
-  width: 8px;
-  height: 8px;
-}
-.main-change-logs span {
-  font-size: 11px;
-  font-weight: bold;
-}
-.log-green {
-  background-color: #6cc644;
-}
-.log-red {
-  background-color: #bd2c00;
-}
-.log-gray {
- background-color: #eee; 
-}
-.log-num-green {
-  color: #6cc644;
-}
-.log-num-red {
-  color: #bd2c00;
 }
 
 /*---------------------------------

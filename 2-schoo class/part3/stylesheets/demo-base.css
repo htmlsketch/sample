@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/*---------------------------------
+Base
+---------------------------------*/
+h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: normal;
+}
+h1 span {
+  color: #aaa; 
+  font-weight: 300;
+}

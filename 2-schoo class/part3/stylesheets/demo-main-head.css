@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/*---------------------------------
+Main
+---------------------------------*/
+
+/*-- main-head --*/
+.main-head-inner {
+  padding: 20px 0;
+}
+.main-head-inner-left {
+  float: left;
+  color: #666;
+}
+.main-head-inner-left i,
+.main-head-inner-left span {
+  vertical-align: middle;
+}
+.main-head-inner-left i {
+  margin-right: 5px;
+  font-size: 30px;
+}
+.main-head-inner-left span {
+  font-size: 20px;
+}
+.main-head-repository-name {
+  font-weight: bold;
+}
+.main-head-inner-right {
+  float: right;
+  margin-top: 5px;
+}
+.main-head-inner-right a + a {
+  margin-left: 10px; 
+}
+.main-head-inner-right i {
+  margin-right: 5px;
+  font-size: 15px;
+  vertical-align: bottom;
+}
