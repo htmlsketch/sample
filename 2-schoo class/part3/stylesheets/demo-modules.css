@@ -17,20 +17,21 @@ Modules
 }
 .btn-new-issue {
   position: absolute;
-  top: 0;
-  right: 20px;
-  padding: 5px 10px;
+  top: 3px;
+  right: 15px;
+  padding: 5px 12px;
 }
 
 /*-- label --*/
 .label-purple {
-  padding: 5px;
+  padding: 6px 8px;
   border-radius: 3px;
   background-color: #6e5494;
   color: #fff;
   font-weight: bold;
 }
 .label-purple i {
+  font-size: 12px;
   margin-right: 5px;
 }
 .label-branch {

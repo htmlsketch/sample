@@ -12,7 +12,7 @@ Main
 .main-body-left-top {
   position: relative;
 }
-.main-angle-back {
+.main-body-left-angle {
   position: absolute;
   top: 0;
   left: -30px;
@@ -21,7 +21,7 @@ Main
 }
 .main-body-left-status {
   color: #777;
-  font-size: 15px;
+  font-size: 14px;
 }
 .main-body-left-status .label-purple {
   margin-right: 10px;
@@ -29,34 +29,34 @@ Main
 .main-body-left-status strong {
   color: #555;
 }
-.main-tabs {
+.main-body-left-tabs {
   float: left;
   margin: 5px 0 -1px 0;
 }
-.main-tabs li {
+.main-body-left-tabs li {
   float: left;
 }
-.main-tabs li + li {
+.main-body-left-tabs li + li {
   margin-left: 10px;
 }
-.main-tabs a {
+.main-body-left-tabs a {
   display: block;
   padding: 10px 15px 7px 9px;
   color: #666;
   font-size: 12px;
   text-decoration: none;
 }
-.main-tabs a.active {
+.main-body-left-tabs a.active {
   border: 1px solid;
   border-color: #ddd #ddd #fff #ddd;  
   border-radius: 3px 3px 0 0;
   color: #333;
 }
-.main-tabs i {
+.main-body-left-tabs i {
   margin-right: 3px;
   font-size: 15px;
 }
-.main-tabs span {
+.main-body-left-tabs span {
   margin-left: 5px;
   padding: 2px 5px;
   border-radius: 50%;
@@ -65,23 +65,23 @@ Main
   font-size: 10px;
   font-weight: bold;
 }
-.main-change-logs {
+.main-body-left-change-logs {
   float: right;
-  margin-right: 20px;
+  margin: 10px 20px 0 0;
 }
-.main-change-logs ul,
-.main-change-logs span {
-  margin: 10px 0 0 5px;
+.main-body-left-change-logs ul,
+.main-body-left-change-logs span {
   display: inline-block;
+  margin: 10px 0 0 5px;
 }
-.main-change-logs li {
+.main-body-left-change-logs li {
   display: block;
   float: left;
   margin-left: 1px;
   width: 8px;
   height: 8px;
 }
-.main-change-logs span {
+.main-body-left-change-logs span {
   font-size: 11px;
   font-weight: bold;
 }

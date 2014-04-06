@@ -6,7 +6,7 @@ Main
 
 /*-- main-head --*/
 .main-head-inner {
-  padding: 20px 0;
+  padding: 19px 0;
 }
 .main-head-inner-left {
   float: left;
@@ -17,7 +17,7 @@ Main
   vertical-align: middle;
 }
 .main-head-inner-left i {
-  margin-right: 5px;
+  margin-right: 3px;
   font-size: 30px;
 }
 .main-head-inner-left span {

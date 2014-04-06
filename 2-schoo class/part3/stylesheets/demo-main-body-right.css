@@ -5,37 +5,37 @@ Main
 ---------------------------------*/
 
 /*-- main-body-right --*/
-.main-body {
-  border-top: 1px solid #eee;
-}
 .main-body-right {
   float: right;
+  margin-top: 25px;
+  box-shadow: inset 1px 0 0 #eee;
+  background-image: linear-gradient(to right, #f6f6f6 0%, #fff 8px);
 }
-.main-body-right-tabs {
-  margin-top: 20px;
-  padding: 10px 0;
-  border-left: 1px solid #eee;
+.main-body-right ul {
+  margin: 0;
+  padding: 5px 0 0;
 }
-.main-body-right-tabs li {
+.main-body-right li {
   margin-left: -1px;
 }
-.main-body-right-tabs li + li {
-  margin-top: 10px;
+.main-body-right li + li {
+  margin-top: 5px;
 }
-.main-body-right-tabs a {
+.main-body-right a {
   display: block;
-  padding: 10px 8px;
+  padding: 10px 8px 10px 10px;
 }
-.main-body-right-tabs li.active {
-  border-color: #eee #c1600f #eee #fff;
+.main-body-right li.active {
+  border-color: #eee #c1600f #eee transparent;
   border-radius: 0px 3px 3px 0;
   border-style: solid;
   border-width: 1px 3px 1px 1px;
+  background-color: #fff;
 }
-.main-body-right-tabs li.active a {
+.main-body-right li.active a {
   color: #333;
 }
-.main-body-right-tabs a {
+.main-body-right a {
   color: #999;
   font-size: 15px; 
 }

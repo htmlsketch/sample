@@ -12,3 +12,8 @@ h1 span {
   color: #aaa; 
   font-weight: 300;
 }
+hr {
+  height: 1px;
+  background-color: #eee;
+  border: none;
+}
