@@ -230,7 +230,6 @@ Main
 }
 .main-head-inner-left span {
   font-size: 20px;
-  font-family: 'Londrina Outline', cursive;
 }
 .main-head-inner-left .main-head-inner-left-public {
   color: #bbb;
@@ -254,7 +253,7 @@ Main
 }
 
 /*-- main-body-left --*/
-/*-- main-body-left --*/
+
 .main-body-left {
   float: left;
   width: 935px;
